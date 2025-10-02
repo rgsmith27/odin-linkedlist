@@ -93,8 +93,11 @@ class LinkedList {
     let pointer = this.head;
     while (pointer) {
       returnString += `( ${pointer.value} ) -> `;
+      pointer = pointer.next;
     }
     returnString += "null";
-    return printString;
+    return returnString;
   }
 }
+
+export default LinkedList;
